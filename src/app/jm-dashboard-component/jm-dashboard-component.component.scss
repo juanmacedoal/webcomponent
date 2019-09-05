@@ -1,0 +1,36 @@
+#user {
+  font-family: "Courier New", Courier, monospace;
+  background-color: white;
+  margin: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+#user:before {
+  content: "Welcome to this webcomponent ";
+  color: black;
+  font-weight: 900;
+}
+
+#logo {
+  text-align: center;
+  img {
+    margin: 10%;
+  }
+}
+
+#footer {
+  height: 40px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.center {
+  position: relative;
+  top: 10px;
+}
