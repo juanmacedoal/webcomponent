@@ -14,14 +14,42 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Build the Webcomponent
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm run build` to build the project.
 
-## Running end-to-end tests
+## Package the generate build in one js file
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `npm run package` will package all the dist/ files in one named webcomponent-element.js (This name can be change in the package.json script)
 
-## Further help
+## Inject the script file
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+In the index.html inject the script tag with the src route to the file.
+
+## Vars needed
+
+The input are (user) that is the name that will show in screen and the image url in the middle of the page.
+
+## Example
+
+`<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Webcomponent</title>
+    <base href="/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  </head>
+  <body>
+    <jm-dashboard user="Juan Manuel Macedo Almeida" image="../assets/logo.jpg"><jm-dashboard>
+  </body>
+  <script src="webcomponent-element.js"></script>
+</html>`

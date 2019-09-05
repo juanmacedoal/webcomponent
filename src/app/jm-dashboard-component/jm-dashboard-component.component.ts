@@ -15,6 +15,7 @@ import { EventEmitter } from "events";
 })
 export class JmDashboardComponentComponent implements OnInit {
   @Input() user: string;
+  @Input() image: string;
   @Output() info = new EventEmitter();
 
   /**
