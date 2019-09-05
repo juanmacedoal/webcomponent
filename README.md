@@ -32,24 +32,4 @@ The input are (user) that is the name that will show in screen and the image url
 
 ## Example
 
-`<!DOCTYPE html>
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Webcomponent</title>
-    <base href="/" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-
-  </head>
-  <body>
-    <jm-dashboard user="Juan Manuel Macedo Almeida" image="../assets/logo.jpg"><jm-dashboard>
-  </body>
-  <script src="webcomponent-element.js"></script>
-</html>`
+In the test-webcomponent folder there is the example
