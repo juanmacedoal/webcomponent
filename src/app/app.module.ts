@@ -1,11 +1,23 @@
+import { RouterModule, PreloadAllModules } from "@angular/router";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule, Injector } from "@angular/core";
 import { JmDashboardComponentComponent } from "./jm-dashboard-component/jm-dashboard-component.component";
 import { createCustomElement } from "@angular/elements";
+// import { AppComponent } from "./app.component";
+// const routes = [
+//   {
+//     path: "",
+//     component: JmDashboardComponentComponent
+//   }
+// ];
 @NgModule({
   declarations: [JmDashboardComponentComponent],
-  imports: [BrowserModule],
+  imports: [
+    BrowserModule
+    // RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
   entryComponents: [JmDashboardComponentComponent]
+  // bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(private injector: Injector) {}

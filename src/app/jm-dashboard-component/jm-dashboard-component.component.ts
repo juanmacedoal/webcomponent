@@ -3,9 +3,9 @@ import {
   OnInit,
   ViewEncapsulation,
   Input,
-  Output
+  Output,
+  EventEmitter
 } from "@angular/core";
-import { EventEmitter } from "events";
 
 @Component({
   selector: "app-jm-dashboard-component",
